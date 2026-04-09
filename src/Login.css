@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: white;
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: darkblue;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 500px;
+}
+
+.hero-right {
+  flex: 1;
+  background-color:lightblue;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero-right h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="tel"] {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 5px;
+}
+
+.terms {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.terms a {
+  color:darkblue;
+  text-decoration: none;
+}
+
+.submit-btn {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color:teal;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero-left, .hero-right {
+    padding: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 2.3rem;
+  }
+}
